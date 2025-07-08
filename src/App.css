@@ -1,0 +1,109 @@
+body {
+  min-height: 100vh;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f0f2f5;
+}
+
+.app-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.07);
+  padding: 32px 24px;
+  color: #111;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h2,
+h3,
+h4,
+p,
+label,
+th,
+td {
+  color: #111; /* Make all text black */
+}
+
+.main-layout {
+  display: flex;
+  gap: 32px;
+  align-items: flex-start;
+}
+
+.left-col {
+  flex: 1.2;
+  min-width: 340px;
+}
+
+.right-col {
+  flex: 1;
+  min-width: 320px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.salary-period {
+  text-align: center;
+  color: #666;
+  margin-bottom: 24px;
+}
+
+.salary-input,
+.calendar,
+.result {
+  background: #f5f5f5;
+  padding: 18px 16px;
+  border-radius: 8px;
+  margin-bottom: 0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+.result {
+  background: #e8f5e9;
+}
+
+.result h4 {
+  color: #388e3c;
+}
+
+.salary-input label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.salary-input input {
+  margin-left: 8px;
+  width: 90px;
+  padding: 3px 6px;
+  border-radius: 4px;
+  border: 1px solid #bbb;
+}
+
+.calendar table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.calendar th,
+.calendar td {
+  padding: 7px 6px;
+  border-bottom: 1px solid #ddd;
+  text-align: left;
+  /* Optionally, set a min-width for better layout */
+  min-width: 80px;
+}
+
+.calendar input[type="number"] {
+  width: 60px;
+  padding: 2px 4px;
+  border-radius: 4px;
+  border: 1px solid #bbb;
+}
